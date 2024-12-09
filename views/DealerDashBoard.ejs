@@ -1,0 +1,108 @@
+<%- include('./Partials/header.ejs') %>
+<!-- Nav Section -->
+<section class="nav" id="Nav">
+    <div class="container">
+        <div class="nav__wrapper">
+            <a href="#Hero" class="logo">
+                AquaHarvest
+            </a>
+            <nav>
+                <div class="nav__icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="3" y1="12" x2="21" y2="12" />
+                        <line x1="3" y1="6" x2="21" y2="6" />
+                        <line x1="3" y1="18" x2="21" y2="18" />
+                    </svg>
+                </div>
+                <div class="nav__bgOverlay"></div>
+                <ul class="nav__list">
+                    <div class="nav__close">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <line x1="18" y1="6" x2="6" y2="18" />
+                            <line x1="6" y1="6" x2="18" y2="18" />
+                        </svg>
+                    </div>
+                    <div class="nav__list__wrapper">
+                        <li><a href="#Hero" class="nav__link activeWindow">Home</a></li>
+                        <!-- <li><a href="#" class="nav__link">About</a></li> -->
+                        <li><form action="/fishType"><a href="./fishType" class="nav__link" type="submit">Fish</a></form></li>
+                        <!-- <li><a href="#" class="nav__link">Help</a></li> -->
+                        <li><a href="./" class="nav__link">Log Out</a></li>
+                    </div>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</section>
+<!-- End Nav Section -->
+
+    <!-- Welcome Section -->
+    <section  id="Welcome" data-aos="zoom-in-up">
+        <div class="welcome User_info">    
+            <h1>Welcome <%= data.name %>
+            </h1>
+            <h3>Good Morning</h3>
+        </div>
+        <div class="Fish_video">
+            <video autoplay muted loop id="myVideo">
+                <source src="Gallery/fishVideo.webm" type="video/mp4">
+              </video>
+        </div>
+    </section>
+    <!-- End Welcome Section -->
+
+    <div class="container" style="height: 2px; background-image: linear-gradient(to left, gray, yellow, gray);"></div>
+
+
+    <!-- Farmers Available -->
+    <section class="activeFarmers container" id="farmers">
+        <h1 class="title">FARMERS</h1>
+        <p class="sub_title">Available</p>
+        <div class="farmersBox">
+            <% var i=400 %>
+                <% farmerData.forEach((farmer)=>{ %>
+                    <div class="farmer" data-aos="fade-up" data-aos-duration="<%= i %>">
+                        <% i=i + 250 %>
+                            <div class="farmerProfilePic"></div>
+                            <div class="farmerInfo">
+                                <p><b>Name : &emsp;</b> <span>
+                                        <%= farmer.name %>
+                                    </span></p>
+                                <p><b>Phone No. : &emsp;</b> <span>
+                                        <%= farmer.call %>
+                                    </span></p>
+                                <p><b>Email : &emsp;</b> <span>
+                                        <%= farmer.email %>
+                                    </span></p>
+                                <p><b>Fishes : </b></p>
+                                <div class="farmerFishes">
+                                    <% farmer.fishes.forEach((fish)=>{ %>
+                                        <span>
+                                            <%= fish.name %>
+                                        </span>
+                                        <% }) %>
+                                            <!-- <span>Salmon</span>
+                        <span>Cod</span>
+                        <span>Haddock</span> 
+                        <span>Tilapia</span>
+                        <span>Pangasius</span>
+                        <span>Trout</span> -->
+                                </div>
+                            </div>
+                            <div class="connectFarmer">
+                                <form>
+                                    <button type="submit">
+                                        Connect &emsp;<i class="uil uil-arrow-right"></i>
+                                    </button>
+                                </form>
+                            </div>
+                    </div>
+                    <% }) %>
+        </div>
+    </section>
+    <!-- End of Active Farmers -->
+
+    <%- include('./Partials/footer.ejs') %>

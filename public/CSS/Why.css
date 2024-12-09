@@ -1,0 +1,111 @@
+.why{
+    background-image: linear-gradient(to right, var(--body-bg), var(--btn-bg), var(--body-bg));
+}
+
+.why_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: auto;
+}
+
+.why_info_logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    width: 80px;
+    padding: 17px;
+    border-radius: 50%;
+    object-fit: contain;
+    background-color: rgba(19, 18, 29, 0.5);
+}
+
+.why_info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 30%;
+    min-width: 400px;
+    height: 350px;
+    border-radius: 12px;
+    padding: 11px 27px;
+    padding-top: 7px;
+    transition: all 0.3s;
+}
+
+
+.info_icon{
+    color: var(--heading-color);
+    font-size: 43px;
+    text-align: center;
+    transition: all 0.2s ease-in;
+}
+
+.why_info:hover .info_icon{
+    color: #8b8acc;
+}
+
+.why_info:hover{
+    box-shadow: 6px 6px 12px rgb(8, 11, 16),
+        -6px -6px 12px rgba(0, 0, 0, 0.1);
+    }
+    
+    .why_description{
+    height: 200px;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 1.8rem;
+    text-align: center;
+    color: var(--heading-color);
+}
+
+@media screen and (max-width: 768px)
+{
+    .why_description{
+        font-size: 18px !important;
+    }
+
+    .why_info{
+        box-shadow: 6px 6px 12px rgb(8, 11, 16),
+            -6px -6px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .why_container{
+        gap: 50px;
+    }
+}
+
+@media screen and (max-width: 400px)
+{
+    .why_info{
+        min-width: 90%;
+        margin: auto;
+        height: fit-content !important;
+    }
+
+    .why_description{
+        height: max-content;
+        margin-bottom: 17px;
+    }
+    .why_info_logo{
+        width: 65px;
+        height: 65px;
+    }
+    .info_icon{
+        font-size: 39px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .why_info_logo{
+        width: 50px;
+        height: 50px;
+    }
+    .info_icon{
+        font-size: 27px;
+    }
+}

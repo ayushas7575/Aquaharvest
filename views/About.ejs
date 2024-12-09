@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fishin' | About</title>
+    <link rel="stylesheet" href="CSS/dark.css">
+    <link rel="stylesheet" href="CSS/CommonStyle.css">
+    <link rel="stylesheet" href="CSS/About.css">
+    <link rel="stylesheet" href="CSS/login.css">
+    <link rel="stylesheet" href="CSS/footer.css">
+    <link rel="stylesheet" href="CSS/onScroll.css" class="onSCROLL" disabled>
+
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+</head>
+
+<body>
+    <!-- Nav Section -->
+    <section class="nav" id="Nav">
+        <div class="container">
+            <div class="nav__wrapper">
+                <a href="#About" class="logo">
+                    AquaHarvest
+                </a>
+                <nav>
+                    <div class="nav__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="3" y1="12" x2="21" y2="12" />
+                            <line x1="3" y1="6" x2="21" y2="6" />
+                            <line x1="3" y1="18" x2="21" y2="18" />
+                        </svg>
+                    </div>
+                    <div class="nav__bgOverlay"></div>
+                    <ul class="nav__list">
+                        <div class="nav__close">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <line x1="18" y1="6" x2="6" y2="18" />
+                                <line x1="6" y1="6" x2="18" y2="18" />
+                            </svg>
+                        </div>
+                        <div class="nav__list__wrapper">
+                            <li><a href="./" class="nav__link">Home</a></li>
+                            <li><a href="#About" class="nav__link activeWindow">About</a></li>
+                            <li><a href="./Fish" class="nav__link">Fish</a></li>
+                            <li><a href="./Help" class="nav__link">Help</a></li>
+                            <li><a href="#" class="SignUp">
+                                    <div class="register">
+                                        Login / SignUp
+                                    </div>
+                                </a></li>
+                        </div>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </section>
+    <!-- End Nav Section -->
+
+    <!-- About Us -->
+    <section id="About" class="about container">
+        <h1 class="title">ABOUT US</h1>
+        <p class="sub_title">What We do</p>
+        <div class="about_content">
+            <div class="about_info" data-aos="fade-up">
+                Welcome to our fish farming website! We are dedicated to providing you with the most comprehensive
+                information on all aspects of fish farming. From beginner tips to advanced techniques, we cover
+                everything you need to know to start and succeed in the world of fish farming.
+                <br>&emsp;&emsp;&emsp;
+                Our mission is to promote sustainable and responsible fish farming practices that benefit both the
+                environment and the economy. We believe that fish farming can be a valuable tool for addressing food
+                security challenges and reducing pressure on wild fish populations. By providing a reliable source of
+                high-quality fish, we help ensure that people have access to nutritious and affordable protein.
+                <br>&emsp;&emsp;&emsp;
+                At our website, you will find a wealth of resources to help you get started with fish farming. Whether
+                you are a hobbyist looking to set up a small backyard pond or a commercial operator seeking to scale up
+                production, we have the information you need to succeed.
+                <br>&emsp;&emsp;&emsp;
+                In conclusion, we are thrilled to welcome you to our fish farming website, and we hope you find the
+                information and resources you need to succeed in this exciting and rewarding field. Whether you are just
+                getting started or looking to take your fish farming business to the next level, we are here to support
+                you every step of the way. Thank you for choosing our website as your go-to resource for fish farming
+                information and guidance.
+            </div>
+            <div class="about_illustration" data-aos="zoom-in-up">
+                <img src="./Gallery/Meeting room in IT office-removebg-preview.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- End About Us -->
+
+    <!-- OUR Team -->
+    <section id="team" class="team container" data-aos="fade-up">
+        <h1 class="title">OUR</h1>
+        <p class="sub_title">Team</p>
+        <div class="team_members">
+           
+            <div class="member" data-aos="fade-down-right">
+                <div class="member_left">
+                    <div class="member_profile" style="background-image: url('/Gallery/Ayush.jpg') !important; background-position: top center;">
+                        <!-- <img src="./Gallery/Mudit1.jpg" alt=""> -->
+                    </div>
+                </div>
+                <div class="member_right">
+                    <div class="member_details">
+                        <p><b>Ayush Kumar Singh</b></p>
+                        <p class="member_profession">Designer & Developer</p>
+                        <p class="member_contact"><b>Ph. No: </b> +91-7761095410</p>
+                    </div>
+                    <div class="card_line"></div>
+                    <div class="member_socials">
+                        <a href="https://www.instagram.com/ayushrajput0777/" class="social_icon" target="_blank"><i
+                                class="uil uil-instagram"></i></a>
+                        <a href="https://twitter.com/"
+                            class="social_icon" target="_blank"><i class="uil uil-twitter-alt"></i></a>
+                        <a href="https://www.linkedin.com/in/" target="_blank" class="social_icon"><i
+                                class="uil uil-linkedin-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End our Team -->
+
+    <!-- Log in/Out section -->
+    <%- include('./Partials/login.ejs') %>
+    <!-- End log in/Out section -->
+
+    <!-- Footer Section -->
+    <footer class="container" id="Footer" data-aos="fade-up">
+        <div class="footer">
+            <div class="website_info footer_content">
+                <p class="logo">AquaHarvest</p>
+                <p class="logo_info">A platform where you can grow for fish farming business.</p>
+                <div class="footer_newsLetter">
+                    <a href="/" class="footer_newsLetter_redirect">
+                        Join Our NewsLetter
+                    </a>
+                </div>
+            </div>
+            <div class="links footer_content">
+                <h3 class="links_title">Links</h3>
+                <ul class="links_list">
+                    <li class="link_items"><a href="./">
+                            Home
+                        </a> </li>
+                    <li class="link_items"><a href="#About">
+                            About
+                        </a></li>
+                    <li class="link_items"><a href="./Fish">
+                            Fish
+                        </a> </li>
+                    <li class="link_items"><a href="./Help">
+                            Help
+                        </a> </li>
+                    <li><a href="#" class="SignUp">
+                            <div class="register">
+                                Login / SignUp
+                            </div>
+                        </a></li>
+                </ul>
+            </div>
+            <div class="support footer_content">
+                <h3 class="links_title">Support</h3>
+                <ul class="links_list">
+                    <li class="link_items">XX-XXXX-XXXX</li>
+                    <li><a href="mailto: muditanand2003@gmail.com" class="link_items">
+                            muditanand2003@gmail.com</a></li>
+                    <li class="link_items"><a href="./Help">
+                            Contact Us
+                        </a> </li>
+                </ul>
+            </div>
+        </div>
+        <p style="color: var(--heading-color); text-align: center; margin-bottom: 12px;" class="copyright">
+            &#169; copyright 2022-23 | All Rights Reserved
+        </p>
+    </footer>
+    <!-- End footer Section -->
+</body>
+
+<!-- scripts -->
+<script src="Js/navigation.js"></script>
+<script src="Js/login.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="Js/Aos_init.js"></script>
+
+</html>

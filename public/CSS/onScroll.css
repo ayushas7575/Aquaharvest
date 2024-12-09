@@ -1,0 +1,24 @@
+.nav {
+    background: #29323c;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    /* backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3); */
+}
+
+
+.nav__list .nav__link {
+    color: var(--heading-color);
+    padding: 0.5rem;
+}
+
+.nav__list li:hover .nav__link {
+    color: var(--text-alt-color);
+}
+
+.register{
+    color: var(--heading-color);
+} 
+.logo{
+    color: var(--heading-color);
+}

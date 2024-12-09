@@ -1,0 +1,76 @@
+<%- include('./Partials/header.ejs') %>
+<!-- Nav Section -->
+<section class="nav" id="Nav">
+  <div class="container">
+      <div class="nav__wrapper">
+          <a href="#Hero" class="logo">
+              AquaHarvest
+          </a>
+          <nav>
+              <div class="nav__icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <line x1="3" y1="12" x2="21" y2="12" />
+                      <line x1="3" y1="6" x2="21" y2="6" />
+                      <line x1="3" y1="18" x2="21" y2="18" />
+                  </svg>
+              </div>
+              <div class="nav__bgOverlay"></div>
+              <ul class="nav__list">
+                  <div class="nav__close">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                          fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round">
+                          <line x1="18" y1="6" x2="6" y2="18" />
+                          <line x1="6" y1="6" x2="18" y2="18" />
+                      </svg>
+                  </div>
+                  <div class="nav__list__wrapper">
+                      <li><a href="#" class="nav__link ">Home</a></li>
+                      <!-- <li><a href="#" class="nav__link">About</a></li> -->
+                      <li><a href="./fishType" class="nav__link activeWindow">Fish</a></li>
+                      <!-- <li><a href="#" class="nav__link">Help</a></li> -->
+                      <li><a href="./" class="nav__link">Log Out</a></li>
+                  </div>
+              </ul>
+          </nav>
+      </div>
+  </div>
+</section>
+<!-- End Nav Section -->
+  <section class="container" id="fishType">
+    <div class="fishType">
+
+
+      <h1>Predict Species of Fish</h1>
+
+      <!-- Main Input For Receiving Query to our ML -->
+      <form action="/predict" method="post">
+        <div class="logform_group">
+          <input type="text" id="Weight" name="Weight" placeholder="Weight.." required>
+        </div>
+        <div class="logform_group">
+          <input type="text" id="Height" name="Height" placeholder="Height.." required>
+        </div>
+        <div class="logform_group">
+          <input type="text" id="Width" name="Width" placeholder="Width.." required>
+        </div>
+        <div class="logform_group">
+          <input type="text" id="Length1" name="Length1" placeholder="Length1.." required>
+        </div>
+        <div class="logform_group">
+          <input type="text" id="Length2" name="Length2" placeholder="Length2.." required>
+        </div>
+        <div class="logform_group">
+          <input type="text" id="Length3" name="Length3" placeholder="Length3.." required>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+      </form>
+    </div>
+    <p style="text-align: center; margin-top: 43px; color: var(--heading-color); font-size: 23px;">Predicted Fish : &emsp;<%= predictedValue %>
+    </p>
+
+  </section>
+
+  <%- include('./Partials/footer.ejs') %>

@@ -1,0 +1,348 @@
+#Welcome {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    width: 100vw !important;
+}
+
+.welcome {
+    width: fit-content;
+    margin-top: 130px;
+    margin-bottom: 100px;
+    padding: 80px 65px;
+    border: 2px solid gray;
+    border-radius: 12px;
+    height: fit-content;
+    font-family: 'poppins';
+    /* background-image: linear-gradient(to top right, #e0c4fd, #8fc6fd); */
+    color: whitesmoke;
+    letter-spacing: .1em;
+    position: relative;
+    z-index: 1;
+
+    background: rgba(255, 255, 255, 0);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 12px;
+}
+
+#myVideo {
+    padding: 0px;
+    width: 100vw !important;
+    /* height: 100%; */
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.welcome h1 {
+    text-align: center;
+    font-weight: 500;
+    font-size: 54px;
+}
+
+.welcome h3 {
+    font-size: 34px;
+    font-weight: 400;
+}
+
+.Fish_video {
+    padding: 0px;
+    position: absolute;
+    top: 0px;
+    width: 100vw !important;
+    height: 100%;
+    z-index: 0;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+/* Fish Section */
+.view_more {
+    background-image: conic-gradient(from 75deg, #4a6cf7, rgba(65, 105, 225, 0.4)) !important;
+    color: var(--heading-color);
+    font-size: 21px;
+    font-family: 'poppins';
+    width: 199px !important;
+}
+
+.down_item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.view_more button,
+.delete button {
+    background-color: transparent;
+    border: none;
+    color: var(--heading-color);
+    font-size: 24px;
+}
+
+.uil-trash {
+    color: var(--heading-color);
+    font-size: 34px;
+}
+
+.view_more,
+.view_more button {
+    cursor: pointer !important;
+}
+
+.fish_item {
+    height: fit-content;
+}
+
+
+.fish_info {
+    padding: 43px 8px;
+}
+
+/* End of fish Section */
+
+/* Add Fish Section */
+.addFish,
+.EditFish {
+    position: absolute;
+    top: 0px;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    background-color: transparent;
+
+    display: none;
+}
+
+.activeAdd,
+.activeEdit {
+    position: fixed;
+    top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.addBg,
+.EditBg {
+    position: absolute;
+    top: 0px;
+    width: 100% !important;
+    height: 100% !important;
+    z-index: 1;
+
+    background: rgba(17, 23, 34, 0.11);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.5px);
+    -webkit-backdrop-filter: blur(6.5px);
+}
+
+.fishAddForm,
+.fishEditForm {
+    max-width: 600px;
+    width: 90%;
+    min-height: 400px;
+    height: fit-content;
+    border-radius: 12px;
+    background-color: var(--btn-bg);
+    position: relative;
+    z-index: 2;
+    padding: 23px 37px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.fishAddForm form,
+.fishEditForm form {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.Fishform_group input {
+    width: 91%;
+    max-width: 210px;
+    padding: 11px 2px;
+    font-size: 18px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid var(--heading-color);
+    color: var(--heading-color);
+    font-family: 'poppins';
+    margin-bottom: 21px;
+    text-align: center;
+}
+
+.fishAddBtn,
+.fishEditBtn {
+    margin-top: 18px;
+    background-color: rgb(41 121 255);
+    color: #fcffd1;
+    outline: none;
+    border: none;
+    width: 100%;
+    max-width: 200px;
+    padding: 13px 17px;
+    font-size: 23px;
+    letter-spacing: .1em;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+/* End of add Fish Section */
+
+/* Farmers from dealers section styling */
+.farmersBox {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 65px 32px;
+}
+
+.farmer {
+    width: 90%;
+    background-image: linear-gradient(to top left, var(--body-bg), var(--btn-bg), var(--body-bg));
+    border-radius: 15px;
+    max-width: 300px;
+    display: flex;
+    width: 100%;
+    padding: 0px 15px !important;
+    padding-bottom: 17px;
+    height: fit-content;
+    min-height: 400px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.farmerProfilePic {
+    position: absolute;
+    top: 0px;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-top: calc(-25% + 10px);
+    overflow: hidden;
+    background-image: url('/Gallery/images.jpeg');
+    background-position: center;
+    background-size: cover;
+}
+
+.farmerInfo {
+    width: 85%;
+    position: absolute;
+    color: white;
+    top: 80px;
+    height: fit-content;
+}
+
+.farmerInfo p {
+    font-size: 18px;
+    font-family: 'poppins';
+}
+
+.farmerInfo p span {
+    font-size: 16px;
+}
+
+.farmerFishes {
+    width: 100%;
+    margin-top: 5px;
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: stretch;
+    gap: 8px;
+    overflow-y: scroll;
+}
+
+.farmerFishes span {
+    font-size: 14px;
+    width: fit-content;
+    height: fit-content;
+    padding: 5px 7px;
+    border: 2px solid gray;
+    font-family: 'poppins';
+    border-radius: 17px;
+    transition: all 0.3s;
+}
+
+.farmerFishes span:hover {
+    background-color: #4a6cf7;
+    color: white;
+}
+
+.connectFarmer {
+    position: absolute;
+    bottom: 17px;
+}
+
+.connectFarmer form button {
+    cursor: pointer;
+    width: 250px;
+    background-color: rgb(41 121 255);
+    border-radius: 15px;
+    border: none;
+    color: var(--heading-color);
+    font-size: 23px;
+    letter-spacing: .1em;
+    height: 54px;
+}
+
+/* End of Farmers from dealers section styling */
+
+@media screen and (max-width: 768px) {
+    .welcome {
+        width: 90%;
+    }
+
+    .welcome h1 {
+        font-size: 41px;
+    }
+
+    .welcome h3 {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .farmer {
+        margin-top: 75px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .Fish_video{
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width: 320px)
+{
+    .welcome{
+        padding: 50px 25px;
+    }
+
+    .welcome h1{
+        font-size: 35px;
+        text-align: center;
+    }
+}

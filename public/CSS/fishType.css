@@ -1,0 +1,64 @@
+#fishType{
+	margin-top: 100px;
+	width: 100vw;
+	min-height: 70vh;
+	height: fit-content;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+.fishType{
+	margin: auto auto;
+	width: fit-content;
+	max-width: 90%;
+	padding: 43px 32px;
+	border-radius: 18px;
+	background-image: linear-gradient(to top right, var(--body-bg), var(--btn-bg), var(--body-bg));
+	height: fit-content;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+.fishType h1{
+	color: var(--heading-color);
+	font-size: 32px;
+	font-weight: 400;
+	letter-spacing: .1em;
+	margin-bottom: 25px;
+}
+
+.fishType form{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.fishType input{
+	border-bottom: 1px solid rgba(255, 255, 255, .5);
+}
+
+input:focus {
+	width: 90%;
+    border-radius: 0px;
+    background-color: transparent;
+	border-bottom: 2px solid rgba(255, 255, 255, .9);
+    transition: all 250ms cubic-bezier(0, 0.0110, 0.35, 2);
+}
+
+.fishType button{
+	border: none;
+	outline: none;
+	font-size: 21px;
+	padding: 18px 16px;
+	border-radius: 18ex;
+	background-color: royalblue;
+	color: var(--heading-color);
+}
+
+@media screen and (max-width: 550px)
+{
+	.fishType form{
+		grid-template-columns: 1fr;
+	}
+}

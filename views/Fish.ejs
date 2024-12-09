@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fishin' | Fish</title>
+    <link rel="stylesheet" href="CSS/dark.css">
+    <link rel="stylesheet" href="CSS/CommonStyle.css">
+    <link rel="stylesheet" href="CSS/Fish.css">
+    <link rel="stylesheet" href="CSS/Fish2.css">
+    <link rel="stylesheet" href="CSS/login.css">
+    <link rel="stylesheet" href="CSS/footer.css">
+    <link rel="stylesheet" href="CSS/onScroll.css" class="onSCROLL" disabled>
+
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+</head>
+
+<body>
+    <!-- Nav Section -->
+    <section class="nav" id="Nav">
+        <div class="container">
+            <div class="nav__wrapper">
+                <a href="#Fish" class="logo">
+                    AquaHarvest
+                </a>
+                <nav>
+                    <div class="nav__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="3" y1="12" x2="21" y2="12" />
+                            <line x1="3" y1="6" x2="21" y2="6" />
+                            <line x1="3" y1="18" x2="21" y2="18" />
+                        </svg>
+                    </div>
+                    <div class="nav__bgOverlay"></div>
+                    <ul class="nav__list">
+                        <div class="nav__close">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <line x1="18" y1="6" x2="6" y2="18" />
+                                <line x1="6" y1="6" x2="18" y2="18" />
+                            </svg>
+                        </div>
+                        <div class="nav__list__wrapper">
+                            <li><a href="./" class="nav__link ">Home</a></li>
+                            <li><a href="./About" class="nav__link">About</a></li>
+                            <li><a href="#Fish" class="nav__link activeWindow">Fish</a></li>
+                            <li><a href="./Help" class="nav__link">Help</a></li>
+                            <li><a href="#" class="SignUp">
+                                    <div class="register">
+                                        Login / SignUp
+                                    </div>
+                                </a></li>
+                        </div>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </section>
+    <!-- End Nav Section -->
+
+    <!-- Fish Section -->
+    <section class="fish container" id="Fish">
+        <h1 class="title">FISH</h1>
+        <p class="sub_title">Our Fishes</p>
+        <div class="fish_search_result">
+            <div class="fish_search">
+                <div class="search_icon">
+                    <i class="uil uil-search"></i>
+                </div>
+                <div class="search_content">
+                    <h3 class="search_title">Search for Fish</h3>
+                    <div class="search_field">
+                        <div class="search-box">
+                            <button class="btn-search"><i class="uil uil-search"></i></button>
+                            <input type="text" id="Search" class="input-search" placeholder="Fish..."
+                                onkeyup="look_for_fish()">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="fish_result" id="Fish_result">
+            </div>
+        </div>
+    </section>
+    <!-- End Fish Section -->
+
+    <!-- Top Searches -->
+    <section class="TopSearches container">
+        <h2>Top Searches</h2>
+        <div class="fish_container">
+            <div class="fish_item">
+                <div class="fish_img">
+                    <img src="./Gallery/SalmonFish.jpeg" alt="">
+                </div>
+                <div class="fish_info">
+                    <p class="fish_text" id="fishName"><b>Name: &emsp;</b>Salmon</p>
+                    <p class="fish_text" id="commonName"><b>Common Name: &emsp;</b>Chinook</p>
+                    <p class="fish_text" id="waterPH"><b>Water Ph.: &emsp;</b>6.5 - 8.5</p>
+                    <p class="fish_text" id="temp"><b>Temperature: &emsp;</b>10 - 14 &#176;C</p>
+                    <p class="fish_text" id="oxyLevel"><b>Oxygen Level: &emsp;</b>High</p>
+                </div>
+                <div class="fish_card_line"></div>
+                <div class="fish_more_detail" id="HideOnClick">
+                    <p>Show More</p>
+                </div>
+            </div>
+            <div class="fish_item">
+                <div class="fish_img">
+                    <img src="./Gallery/catfish.jpeg" alt="">
+                </div>
+                <div class="fish_info">
+                    <p class="fish_text" id="fishName"><b>Name: &emsp;</b>Catfish</p>
+                    <p class="fish_text" id="commonName"><b>Common Name: &emsp;</b>Magur OR singhi OR ermai</p>
+                    <p class="fish_text" id="waterPH"><b>Water Ph.: &emsp;</b>6.5 - 8.0</p>
+                    <p class="fish_text" id="temp"><b>Temperature: &emsp;</b>20 - 30 &#176;C</p>
+                    <p class="fish_text" id="oxyLevel"><b>Oxygen Level: &emsp;</b>High</p>
+                </div>
+                <div class="fish_card_line"></div>
+                <p class="fish_more_detail">Show More</p>
+            </div>
+            <div class="fish_item">
+                <div class="fish_img" style="background-color: white;">
+                    <img src="./Gallery/Tuna.jpeg" alt="" style="object-fit: contain;">
+                </div>
+                <div class="fish_info">
+                    <p class="fish_text" id="fishName"><b>Name: &emsp;</b>Tuna</p>
+                    <p class="fish_text" id="commonName"><b>Common Name: &emsp;</b>Chura OR Surmai</p>
+                    <p class="fish_text" id="waterPH"><b>Water Ph.: &emsp;</b>6.5 - 8.0</p>
+                    <p class="fish_text" id="temp"><b>Temperature: &emsp;</b>4 - 15 &#176;C</p>
+                    <p class="fish_text" id="oxyLevel"><b>Oxygen Level: &emsp;</b>9 mg/L</p>
+                </div>
+                <div class="fish_card_line"></div>
+                <p class="fish_more_detail">Show More</p>
+            </div>
+            <div class="fish_item">
+                <div class="fish_img">
+                    <img src="./Gallery/SalmonFish.jpeg" alt="">
+                </div>
+                <div class="fish_info">
+                    <p class="fish_text" id="fishName"><b>Name: &emsp;</b>Salmon</p>
+                    <p class="fish_text" id="commonName"><b>Common Name: &emsp;</b>Chinook</p>
+                    <p class="fish_text" id="waterPH"><b>Water Ph.: &emsp;</b>6.5 - 8.5</p>
+                    <p class="fish_text" id="temp"><b>Temperature: &emsp;</b>10 - 14 &#176;C</p>
+                    <p class="fish_text" id="oxyLevel"><b>Oxygen Level: &emsp;</b>High</p>
+                </div>
+                <div class="fish_card_line"></div>
+                <div class="fish_more_detail" id="HideOnClick">
+                    <p>Show More</p>
+                </div>
+            </div>
+            <div class="fish_item">
+                <div class="fish_img">
+                    <img src="./Gallery/catfish.jpeg" alt="">
+                </div>
+                <div class="fish_info">
+                    <p class="fish_text" id="fishName"><b>Name: &emsp;</b>Catfish</p>
+                    <p class="fish_text" id="commonName"><b>Common Name: &emsp;</b>Magur OR singhi OR ermai</p>
+                    <p class="fish_text" id="waterPH"><b>Water Ph.: &emsp;</b>6.5 - 8.0</p>
+                    <p class="fish_text" id="temp"><b>Temperature: &emsp;</b>20 - 30 &#176;C</p>
+                    <p class="fish_text" id="oxyLevel"><b>Oxygen Level: &emsp;</b>High</p>
+                </div>
+                <div class="fish_card_line"></div>
+                <p class="fish_more_detail">Show More</p>
+            </div>
+            <div class="fish_item">
+                <div class="fish_img" style="background-color: white;">
+                    <img src="./Gallery/Tuna.jpeg" alt="" style="object-fit: contain;">
+                </div>
+                <div class="fish_info">
+                    <p class="fish_text" id="fishName"><b>Name: &emsp;</b>Tuna</p>
+                    <p class="fish_text" id="commonName"><b>Common Name: &emsp;</b>Chura OR Surmai</p>
+                    <p class="fish_text" id="waterPH"><b>Water Ph.: &emsp;</b>6.5 - 8.0</p>
+                    <p class="fish_text" id="temp"><b>Temperature: &emsp;</b>4 - 15 &#176;C</p>
+                    <p class="fish_text" id="oxyLevel"><b>Oxygen Level: &emsp;</b>9 mg/L</p>
+                </div>
+                <div class="fish_card_line"></div>
+                <p class="fish_more_detail">Show More</p>
+            </div>
+
+        </div>
+    </section>
+    <!-- End Top Searches -->
+
+    <!-- Log in/Out section -->
+    <%- include('./Partials/login.ejs') %>
+    <!-- End log in/Out section -->
+
+    <!-- Footer Section -->
+    <footer class="container" id="Footer" data-aos="fade-up">
+        <div class="footer">
+            <div class="website_info footer_content">
+                <p class="logo">AquaHarvest</p>
+                <p class="logo_info">A platform where you can grow for fish farming business.</p>
+                <div class="footer_newsLetter">
+                    <a href="/" class="footer_newsLetter_redirect">
+                        Join Our NewsLetter
+                    </a>
+                </div>
+            </div>
+            <div class="links footer_content">
+                <h3 class="links_title">Links</h3>
+                <ul class="links_list">
+                    <li class="link_items"><a href="./">
+                            Home
+                        </a> </li>
+                    <li class="link_items"><a href="./About">
+                            About
+                        </a></li>
+                    <li class="link_items"><a href="#Fish">
+                            Fish
+                        </a> </li>
+                    <li class="link_items"><a href="./Help">
+                            Help
+                        </a> </li>
+                    <li><a href="#" class="SignUp">
+                            <div class="register">
+                                Login / SignUp
+                            </div>
+                        </a></li>
+                </ul>
+            </div>
+            <div class="support footer_content">
+                <h3 class="links_title">Support</h3>
+                <ul class="links_list">
+                    <li class="link_items">XX-XXXX-XXXX</li>
+                    <li><a href="mailto: muditanand2003@gmail.com" class="link_items">
+                            muditanand2003@gmail.com</a></li>
+                    <li class="link_items"><a href="./Help">
+                            Contact Us
+                        </a> </li>
+                </ul>
+            </div>
+        </div>
+        <p style="color: var(--heading-color); text-align: center; margin-bottom: 12px;" class="copyright">
+            &#169; copyright 2022-23 | All Rights Reserved
+        </p>
+    </footer>
+    <!-- End footer Section -->
+
+    <!-- Scripts -->
+    <script src="Js/navigation.js"></script>
+    <script src="Js/Fish.js"></script>
+    <script src="Js/login.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="Js/Aos_init.js"></script>
+</body>
+
+</html>

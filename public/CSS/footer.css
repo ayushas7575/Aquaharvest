@@ -1,0 +1,134 @@
+.footer{
+    border: 0.45rem solid;
+    border-image: linear-gradient(to bottom, red, rgba(0, 0, 0, 0)) 1 49%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 35px 15px;
+    padding-bottom: 8px;
+    gap: 24px;
+}
+
+
+.footer_content{
+    height: 400px;
+    max-width: 500px;
+    width: fit-content;
+    padding: 17px 13px;   
+}
+
+.footer .logo{
+    font-size: 35px;
+    font-family: 'poppins';
+    color: var(--heading-color);
+}
+
+.logo_info{
+    font-family: 'poppins';
+    margin-top: 17px;
+    margin-bottom: 23px;
+    color: var(--heading-color);
+}
+
+.footer_newsLetter{
+    width: 85%;
+    max-width: 300px;
+    padding: 13px 17px;
+    background-image: conic-gradient(from 80deg, #e0c4fd, #8fc6fd);
+    color: var(--heading-color);
+    border-radius: 12px;
+}
+
+.footer_newsLetter a{
+    font-size: 22px;
+    font-family: 'poppins';
+    text-decoration: none;
+}
+
+.links{
+    color: var(--heading-color);
+    font-family: 'poppins';
+    padding-left: 43px;
+}
+
+.links_title{
+    color: var(--heading-color);
+    font-size: 29px;
+    margin-bottom: 23px;
+}
+
+.links_list{
+    list-style: none;
+}
+
+.link_items, .link_items a{
+    color: var(--heading-color);
+    font-family: 'poppins';
+    font-size: 23px;
+}
+
+.footer .register{
+    margin-top: 22px;
+    border: 2px solid coral;
+}
+
+.support .link_items{
+    font-size: 18px;
+}
+
+@media screen and (max-width: 768px)
+{
+    .footer{
+        justify-content: flex-start;
+        padding-left: 32px;
+    }
+
+    .footer .logo{
+        font-size: 29px;
+    }
+
+    .logo_info{
+        font-size: 18px;
+    }
+
+    .links{
+        padding: 17px 13px;
+    }
+
+    .links_title{
+        font-size: 25px;
+    }
+
+    .link_items a{
+        font-size: 17px;
+    }
+    
+    .footer_content{
+        height: fit-content;
+    }
+
+}
+
+@media screen and (max-width: 580px)
+{
+    .copyright{
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 300px)
+{
+    .footer{
+        padding-left: 11px;
+    }
+
+    .support .link_items{
+        font-size: 15px;
+    }
+
+    .copyright{
+        font-size: 11px;
+    }
+}
